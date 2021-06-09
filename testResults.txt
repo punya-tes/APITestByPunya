@@ -1,0 +1,42 @@
+newman
+
+SpaceXLaunchAPI_Tests
+
+→ GetLaunchDetails
+  GET https://api.spacexdata.com/v4/launches/latest [200 OK, 2.08KB, 1155ms]
+  ✓  Status code is 200
+  ✓  Response should display id, launch_library_id, launchpad and fairings
+  ┌
+  │ [ '5ea6ed2f080df4000697c90b',
+  │   '5ea6ed2e080df4000697c909' ]
+  │ [ { core: '5f57c53d0622a6330279009f',
+  │     flight: 3,
+  │     gridfins: true,
+  │     legs: true,
+  │     reused: true,
+  │     landing_attempt: true,
+  │     landing_success: true,
+  │     landing_type: 'ASDS',
+  │     landpad: '5e9e3033383ecbb9e534e7cc' } ]
+  └
+  ✓  Test Response shows cores array details and Fairing Object should show details about ships
+
+┌─────────────────────────┬─────────────────────┬─────────────────────┐
+│                         │            executed │              failed │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              iterations │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│                requests │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│            test-scripts │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│      prerequest-scripts │                   0 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              assertions │                   3 │                   0 │
+├─────────────────────────┴─────────────────────┴─────────────────────┤
+│ total run duration: 1210ms                                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ total data received: 1002B (approx)                                 │
+├─────────────────────────────────────────────────────────────────────┤
+│ average response time: 1155ms [min: 1155ms, max: 1155ms, s.d.: 0µs] │
+└─────────────────────────────────────────────────────────────────────┘
