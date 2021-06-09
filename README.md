@@ -1,4 +1,4 @@
-# AutoTestByPunya
+# AutoTest_API_ByPunya
 AutoTestByPunya
 
 Public link of postman Collection:
